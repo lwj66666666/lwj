@@ -23,7 +23,17 @@
         <div style="display: none;">http://vr013.com/</div>
     </div>
     <!-- 这里替换音乐 -->
-    <embed src="一个像夏天一个像秋天.mp3" autostart="ture" width="0" height="0">
+    <audio autoplay="autopaly" loop="loop" id="audios">
+        <source src="一个像夏天一个像秋天.mp3" type="audio/mp3" />
+    </audio>
+        
+    <script>
+    // 将以下代码添加到js入口函数内即可
+    document.addEventListener('click', function() {
+        document.getElementById('audios').play()
+    })
+        
+    </script>
     <canvas id="lovexf"></canvas>
     <script src="script.js"></script>
     <script src="./love.click.js"></script>
